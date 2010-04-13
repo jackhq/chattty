@@ -5,12 +5,15 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "chattty"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{short message activities}
+    gem.description = %Q{document system activities and provide internal user messaging to any rails app}
     gem.email = "tom@jackhq.com"
-    gem.homepage = "http://github.com/twilson63/chattty"
+    gem.homepage = "http://github.com/jackhq/chattty"
     gem.authors = ["Tom Wilson"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
+    gem.files += Dir.glob('app/**/*.rb')
+    gem.files += Dir.glob('generators/**/*.rb')
+    gem.test_files.exclude 'spec/rails_root'
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

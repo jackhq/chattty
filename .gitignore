@@ -19,3 +19,6 @@ rdoc
 pkg
 
 ## PROJECT::SPECIFIC
+spec/rails_root/tmp
+spec/rails_root/db/*.db
+spec/rails_root/log
